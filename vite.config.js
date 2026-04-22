@@ -22,6 +22,7 @@ export default defineConfig({
         // Cache uniquement les assets statiques
         // Pas de cache agressif sur les appels Supabase
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         runtimeCaching: []
       }
     })
